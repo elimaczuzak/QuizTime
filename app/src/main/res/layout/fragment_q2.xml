@@ -1,0 +1,63 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eli.quiztime.Q2Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ededed">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Who&apos;s that Pokemon?!"
+            android:id="@+id/q2_text"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:phoneNumber="true"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/charz"
+
+            android:longClickable="true"
+            android:maxHeight="300dp"
+            android:maxWidth="200dp"
+            android:layout_above="@+id/q2_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="25dp"
+            android:src="@drawable/charizard" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:id="@+id/btn_submit_q2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:background="#56009e"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer"
+            android:layout_below="@+id/q2_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:inputType="textCapWords"
+            android:lines="1" />
+    </RelativeLayout>
+
+</FrameLayout>

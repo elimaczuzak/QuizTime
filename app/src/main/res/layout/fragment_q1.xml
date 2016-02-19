@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.eli.quiztime.Q1Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#ededed">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/q1_text"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_marginTop="39dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="Who raps with El-P in the hip hop duo Run the Jewels?"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:textIsSelectable="false"
+            android:textSize="30dp" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/btn_q1_submit"
+            android:layout_marginStart="48dp"
+            android:id="@+id/q1_radio_group">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Killer Mike"
+                android:id="@+id/km"
+                android:checked="false"
+                android:layout_centerVertical="true"
+                android:layout_alignStart="@+id/simba"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eminem"
+                android:id="@+id/em"
+                android:layout_below="@+id/an"
+                android:layout_alignParentStart="true"
+                android:checked="false"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Andre 3000"
+                android:id="@+id/an"
+                android:checked="false"
+                android:layout_below="@+id/em"
+                android:layout_alignParentStart="true"
+                android:textSize="25dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GZA"
+                android:id="@+id/gza"
+                android:checked="false"
+                android:layout_below="@+id/km"
+                android:layout_alignParentStart="true"
+                android:textSize="25dp" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/btn_q1_submit"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:background="#56009e"
+            android:textColor="#ffffff"
+            android:layout_margin="10dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>
